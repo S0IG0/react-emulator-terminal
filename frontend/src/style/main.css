@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+
+:root {
+    --padding-start-terminal: 40px;
+}
+
+
+
+body {
+    background: #1e1f22;
+    overflow-y: scroll;
+}
+
+.command-line, .message {
+    display: flex;
+    width: 100%
+}
+
+.user, .input-line, .history *, .response {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "JetBrains Mono", serif;
+    text-shadow: 0 0 5px white;
+    padding: 5px;
+}
+
+.input-line {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+}
+
+.user {
+    margin-right: 5px;
+    text-wrap: nowrap;
+}
+
+.container {
+    margin: 20px;
+}
+
+.error {
+    color: orangered;
+    text-shadow: 0 0 5px orangered;
+}
+
+.success {
+    color: greenyellow;
+    text-shadow: 0 0 5px greenyellow;
+}
+
+.file, .directory {
+    display: flex;
+    margin-left: var(--padding-start-terminal);
+    justify-content: space-between;
+}
+
