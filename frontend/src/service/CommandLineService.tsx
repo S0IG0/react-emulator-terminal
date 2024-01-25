@@ -131,7 +131,7 @@ class CommandLineService {
         try {
             store.addFileByName(name);
             return {
-                element: (<span>Crete file: "{name}" success</span>),
+                element: (<span>Create file: "{name}" success</span>),
                 _type: ResponseType.SUCCESS
             }
         } catch (error) {
@@ -233,7 +233,7 @@ class CommandLineService {
         try {
             store.addDirectory(name);
             return {
-                element: (<span>Crete directory: "{name}" success</span>),
+                element: (<span>Create directory: "{name}" success</span>),
                 _type: ResponseType.SUCCESS
             }
         } catch (error) {
